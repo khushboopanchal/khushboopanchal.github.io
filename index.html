@@ -55,7 +55,8 @@
             center: center,
             zoom: 9,
         });
-                if (navigator.geolocation) {
+        infowindow = new google.maps.Infowindow();
+        if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
               lat: position.coords.latitude,
