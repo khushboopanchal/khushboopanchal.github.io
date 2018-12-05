@@ -47,17 +47,15 @@
     {
         autocomplete = new google.maps.places.Autocomplete((document.getElementById('address')), {
             types: ['(regions)'],
-           // componentRestrictions: countryRestrict
         });
 
         var center = new google.maps.LatLng(43.4540827,-76.5601776);
 
         map = new google.maps.Map(document.getElementById('map'), {
             center: center,
-            zoom: 12
+            zoom: 9,
         });
-        /*
-        if (navigator.geolocation) {
+                if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
               lat: position.coords.latitude,
@@ -74,7 +72,7 @@
         } else {
           // Browser doesn't support Geolocation
           handleLocationError(false, infowindow, map.getCenter());
-        }*/
+        }
       }
 
     function renderMap()
@@ -176,7 +174,7 @@
                 <label>Radius</label>
                     <input class="w3-input w3-border" type="text" name="radius" id="radius" value="5" placeholder="In KM">
                 <label>Types</label>
-                    <div id="type_holder" style="height: 200px; overflow-y: scroll;">
+                    <div id="type_holder">
                         <!-- Dynamic Content -->    
                     </div>
                 <input class="w3-button w3-dark-grey" type="button" value="Show" id="submit" onclick="renderMap();">
