@@ -55,6 +55,8 @@
             center: center,
             zoom: 9,
         });
+        
+        // current location
         infowindow = new google.maps.InfoWindow();
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
@@ -103,7 +105,7 @@
                 selLocLat   = results[0].geometry.location.lat();
                 selLocLng   = results[0].geometry.location.lng();
 
-                var center = new google.maps.LatLng(document.getElementById('address'));
+                var center = new google.maps.LatLng(selLocLat, selLocLng);
                 map = new google.maps.Map(document.getElementById('map'), {
                     center: center,
                     zoom: 11
@@ -117,7 +119,7 @@
                     types: selectedTypes
                 };
 
-             //   infowindow = new google.maps.Infowindow();
+               infowindow = new google.maps.InfoWindow();
 
                 var service = new google.maps.places.PlacesService(map);
                 service.nearbySearch(request, callback);
