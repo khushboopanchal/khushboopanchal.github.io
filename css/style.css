@@ -322,6 +322,9 @@ ul, ol {
 .nav-switch {
   display: none;
 }
+nav.main-menu {
+    margin-left: 80px;
+}
 /*------------------------
     Intro Section
 --------------------------*/
