@@ -352,6 +352,12 @@ p.img-credits {
     color: #a6a6a6;
     margin-bottom: 0;
 }
+.element {
+    margin-top: 2rem;
+}
+.vertical-ht{
+    height: 40vh;
+}
 /*------------------------
     Footer Section
 --------------------------*/
