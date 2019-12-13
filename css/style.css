@@ -29,7 +29,7 @@ p span {
     display: inline-block;
 }
 p {
-    font-size: 18px;
+    font-size: 1.3rem;
     color: #696969;
     line-height: 1.8;
     margin-bottom: 0.7rem;
@@ -59,6 +59,7 @@ ul,
 ol {
     padding: 0;
     margin: 0;
+    font-size: 1.2rem;
 }
 
 .body-pad {
@@ -349,7 +350,7 @@ nav.main-menu {
 ---------------------------*/
 p.img-credits {
     font-size: 14px;
-    color: #a6a6a6;
+    color: #545b62;
     margin-bottom: 0;
 }
 .element {
@@ -357,6 +358,12 @@ p.img-credits {
 }
 .vertical-ht{
     height: 40vh;
+}
+.container.custom-style {
+    max-width: 57rem;
+}
+.container.custom-style p {
+    font-size: 1.4rem;
 }
 /*------------------------
     Footer Section
